@@ -18,10 +18,135 @@
   <body>
     <p style="padding-left: 6pt;text-indent: 5pt;text-align: center;"><span><br><br><br><img alt="logo and blanket" src="laalaaprojectmain_files/Image_001.jpeg" style="width:90%;"/></span></p>
     <p style="text-indent: 5pt;text-align: center;"><br/></p>
-    <p class="s1" style="padding-left: 5pt;text-indent: 0pt;text-align: center;">Unique, modern quilts with fun patterns<br> designed just for you.</p><br><br><br><br>
+    <p class="s1" style="padding-left: 5pt;text-indent: 0pt;text-align: center;">Unique, modern quilts and quilted items with fun patterns<br> designed just for you.</p><br><br><br><br>
     <h1 style="padding-top: 5pt;padding-left: 5pt;text-indent: 0pt;text-align: center;">Why Choose Us?</h1><p style="padding-top: 16pt;padding-left: 7pt;text-indent: 0pt;text-align: center;">Craftsmanship and creativity come together in our custom <br> modern quilted blankets. Each piece is a unique work of art,<br> blending fun patterns to match your style.</p>
     <p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 5pt;text-indent: 0pt;text-align: center;"><span><img alt="pattern planning" src="laalaaprojectmain_files/Image_002.png" style="width:75%;"/></span></p><br><br><br><br>
     <h1 style="padding-top: 4pt;padding-left: 5pt;text-indent: 0pt;text-align: center;">Stand Out with Style</h1><p style="padding-top: 16pt;padding-left: 5pt;text-indent: 0pt;text-align: center;">Our quilts are not just blankets; they&#39;re a statement.<br> With a focus on modern design and playful pattern mixing,<br> we create pieces that add a touch of fun to any space.</p>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.top {
+  display: flex;
+  width: 80vw;
+  height: 80vh;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10vh;
+}
+
+.top ul {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.top ul li {
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 25%;
+  overflow: hidden;
+}
+
+.top ul li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  content: "";
+  color: white;
+  opacity: 0.4;
+  text-align: center;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.top ul li:hover::before {
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.top ul li img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.lightbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  position: relative;
+  top: -100%;
+}
+
+.lightbox:target {
+  outline: none;
+  top: 0;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox:target img {
+  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+<div class="container">
+  <div class="top">
+    <ul>
+      <li>
+        <a href="#img_02"><img src="laalaaprojectmain_files/Image_002.jpeg"></a>
+      </li>
+      <li>
+        <a href="#img_03"><img src="laalaaprojectmain_files/Image_003.jpeg"></a>
+      </li>
+      <li>
+        <a href="#img_03"><img src="laalaaprojectmain_files/Image_004.jpeg"></a>
+      </li>
+      <li>
+        <a href="#img_03"><img src="laalaaprojectmain_files/Image_005.jpeg"></a>
+      </li>
+    </ul>
+    <a href="#_02" class="lightbox" id="img_002"><img src="laalaaprojectmain_files/Image_002.jpeg"></a>
+    <a href="#_03" class="lightbox" id="img_003"><img src="laalaaprojectmain_files/Image_003.jpeg"></a>
+    <a href="#_04" class="lightbox" id="img_004"><img src="laalaaprojectmain_files/Image_004.jpeg"></a>
+    <a href="#_05" class="lightbox" id="img_005"><img src="laalaaprojectmain_files/Image_005.jpeg"></a>
+  </div>
+</div>
+    
     <p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 5pt;text-indent: 0pt;text-align: center;"><span><img alt="sewing machine" src="laalaaprojectmain_files/Image_003.jpg" style="width:75%;"/></span></p><br><br><br><br>
     <h1 style="padding-top: 4pt;padding-left: 5pt;text-indent: 0pt;text-align: center;">Get started today!</h1><p style="padding-top: 16pt;padding-left: 5pt;text-indent: 0pt;text-align: center;">Ready to bring your vision to life? <br>Get in touch with us to discuss your custom order <br>and create something that’s truly one-of-a-kind.</p>
     <p style="text-indent: 0pt;text-align: left;"><br/></p><p style="padding-left: 5pt;text-indent: 0pt;text-align: center;"><a href="mailto:info@laalaaproject.com">info@laalaaproject.com</a></p>
